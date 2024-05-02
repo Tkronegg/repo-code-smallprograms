@@ -1,0 +1,19 @@
+html {
+  padding: 10px;
+
+  background-color: blanchedalmond;
+}
+.unite {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button {
+  background-color: azure;
+  border: 1px;
+  border-radius: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: block;
+  margin: 10px;
+}
+select {
+  margin: 5px;
+}

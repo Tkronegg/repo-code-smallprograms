@@ -1,0 +1,33 @@
+<h1>Welome to my converter</h1>
+<input type="number" [(ngModel)]="number" />
+<br />
+<label for="unite">Choisissez une première unité:</label>
+
+<select
+  #uniteinput
+  name="uniteinput"
+  id="uniteinput"
+  (change)="chooseInputUnit(uniteinput.value)"
+>
+  <option value="metres">Mètres</option>
+  <option value="centimetres">Centimètres</option>
+  <option value="kilometres">Kilomètres</option>
+  <option value="hectometres">Hectomètres</option>
+</select>
+<br />
+<label for="unite">Choisissez une unité de retour:</label>
+
+<select
+  #uniteoutput
+  name="uniteoutput"
+  id="uniteoutput"
+  (change)="chooseOutputUnit(uniteoutput.value)"
+>
+  <option value="metres">Mètres</option>
+  <option value="centimetres">Centimètres</option>
+  <option value="kilometres">Kilomètres</option>
+  <option value="hectometres">Hectomètres</option>
+</select>
+<button type="submit" (click)="convert()">Calculer</button>
+
+<input type="text" *ngIf="result" [(ngModel)]="result" />
